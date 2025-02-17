@@ -1,0 +1,54 @@
+.swiper-container {
+  @include respond-to(mobile) {
+    width: 415px;
+    margin: 24px 0 0;
+  }
+
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  margin: 32px 0 0;
+}
+
+.swiper-slide {
+  position: relative;
+  width: auto;
+  height: 226px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.swiper-slide-active {
+    @include respond-to(mobile) {
+      margin-left: -1px;
+
+      &:first-child {
+        margin-left: -31px;
+      }
+    }
+
+    margin-left: 0;
+  }
+}
+
+.swiper-slide-next {
+  position: relative;
+}
+
+.swiper-slide-next::after {
+  @include respond-to(mobile) {
+    background: transparent;
+  }
+
+  content: "";
+  position: absolute;
+  top: -36px;
+  left: 0;
+  z-index: 1;
+  width: 48%;
+  height: 300px;
+  background: var(--bg-light-gray);
+  filter: blur(54px);
+  transform: scale(1.05);
+}

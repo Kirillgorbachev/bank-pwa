@@ -1,0 +1,99 @@
+.grid {
+    @include respond-to(mobile) {
+        gap: 16px auto;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 24px 19px;
+
+    .cell {
+        @include respond-to(mobile) {
+            width: 30px;
+            font: var(--font-small-400-tight);
+        }
+
+        position: relative;
+        color: var(--black);
+        font: var(--font-small-400-small-line);
+        text-align: center;
+        cursor: default;
+    }
+
+    .between, .first, .last {
+        &::before {
+            @include respond-to(mobile) {
+                right: -11px;
+                left: -11px;
+                height: 30px;
+            }
+
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -12px;
+            left: -12px;
+            z-index: -1;
+            height: 36px;
+        }
+    }
+
+    .selected {
+        &::after {
+            @include respond-to(mobile) {
+                width: 30px;
+                height: 30px;
+            }
+
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--yellow-1);
+            translate: -50% -50%;
+        }
+    }
+
+    .between {
+        &::before {
+            background-color: var(--grey-450);
+            translate: 0 -50%;
+        }
+    }
+
+    .first {
+        &::before {
+            @include respond-to(mobile) {
+                left: 0;
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+            }
+
+            left: 11px;
+            border-top-left-radius: 24px;
+            border-bottom-left-radius: 24px;
+            background-color: var(--grey-450);
+            translate: 0 -50%;
+        }
+    }
+
+    .last {
+        &::before {
+            @include respond-to(mobile) {
+                right: 0;
+                border-top-right-radius: 16px;
+                border-bottom-right-radius: 16px;
+            }
+
+            right: 11px;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+            background-color: var(--grey-450);
+            translate: 0 -50%;
+        }
+    }
+}

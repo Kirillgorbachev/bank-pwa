@@ -1,0 +1,25 @@
+.chat-button-add-container {
+  @include respond-to(mobile) {
+    bottom: 21px;
+    left: 29px;
+  }
+
+  position: absolute;
+  bottom: 11px;
+  left: 24px;
+  z-index: 2;
+
+  .button-add-file {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--black-font-disabled);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:active{
+      transform: scale(1.1)
+    }
+  }
+}
+

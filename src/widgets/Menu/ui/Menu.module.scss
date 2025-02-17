@@ -1,0 +1,15 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 200px;
+}
+
+@include respond-to(mobile) {
+    .menu {
+        flex-direction: row;
+        gap: 2vw;
+        justify-content: space-around;
+        width: auto;
+    }
+}

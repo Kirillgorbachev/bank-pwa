@@ -1,0 +1,41 @@
+.contactCard {
+  @include respond-to(mobile) {
+    width: 132px;
+    height: 117px;
+  }
+
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 110px;
+  height: 100px;
+  padding: 12px;
+  border: 1px solid var(--bg-middle-gray);
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--bg-light-gray);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  }
+
+  &:active {
+    background-color: var(--bg-middle-gray);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+  }
+}
+
+.selected {
+  border: 1px solid var(--grey-950);
+}
+
+.contactName {
+  margin-top: 9px;
+  color: var(--black-font);
+  font: var(--font-medium-medium-400);
+}
+
+.contactPhone {
+  color: var(--grey-850);
+  font: var(--font-tiny-tiny-400);
+}

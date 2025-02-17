@@ -1,0 +1,10 @@
+.payCardQr {
+    @include respond-to(mobile) {
+        margin-top: 24px;
+    }
+}
+
+.title {
+    margin-bottom: 32px;
+    text-align: center;
+}

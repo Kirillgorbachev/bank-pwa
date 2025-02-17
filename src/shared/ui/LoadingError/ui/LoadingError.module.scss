@@ -1,0 +1,25 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--bg-light-gray);
+    color: var(--grey-800);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    font: var(--font-base-500);
+    text-align: center;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--light-red);
+    color: var(--red);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    font: var(--font-base-500);
+    text-align: center;
+}

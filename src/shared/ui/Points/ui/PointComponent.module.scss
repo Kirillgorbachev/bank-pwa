@@ -1,0 +1,26 @@
+.accrualDate{
+    color:var(--black-font-disabled);
+    font: var(--font-tiny-400-tiny-line);
+    font-size: 12px;
+}
+
+.points{
+    color:var(--green-500);
+    font: var(--font-base-500);
+    font-size: 18px;
+}
+
+
+.pointsBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 8px;
+    background-color:var(--white) ;
+}
+
+
+

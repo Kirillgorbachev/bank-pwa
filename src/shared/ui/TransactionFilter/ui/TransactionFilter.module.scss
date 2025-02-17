@@ -1,0 +1,22 @@
+.FilterConteiner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    button{
+        padding: 8px;
+        border-radius: 8px;
+        font: var(--font-s-500);
+        cursor: pointer;
+    }
+}
+
+.active{
+    background: var(--white);
+    color: var(--black-font);
+}
+
+.disable{
+    background: none;
+    color: var( --black-font-disabled);
+}

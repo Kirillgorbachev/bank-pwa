@@ -1,0 +1,17 @@
+.documentList {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    .title {
+        color: var(--black-font);
+        font: var(--font-big-600-adaptiv);
+        letter-spacing: -0.02em;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px; 
+    }
+}

@@ -1,0 +1,128 @@
+.user {
+    @include respond-to(mobile) {
+        position: relative;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+    .avatarContainer {
+        @include respond-to(mobile) {
+            width: 48px;
+            height: 48px;
+        }
+
+        overflow: hidden;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+
+        .avatar {
+            position: relative;
+            top: -50%;
+            left: -25%;
+            width: 170%;
+            height: auto;
+        }
+    }
+
+    .content {
+        @include respond-to(mobile) {
+            gap: 2px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    
+        .name {
+            @include respond-to(mobile) {
+                font: var(--font-big-600-adaptiv);
+            }
+
+            color: var(--black);
+            font: var(--font-base-600);
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+
+        .greetings {
+            color: var(--grey-850);
+            font: var(--font-small-400-tight);
+            text-align: left;
+        }
+
+        .editButton {
+            display: flex;
+            gap: 4px;
+
+            .title {
+                color: var(--grey-850);
+                font: var(--font-small-400-tight);
+            }
+
+            .icon {
+                width: 16px;
+                height: 16px;
+                color: var(--grey-850);
+            }
+        }
+    }
+
+    .goToProfileButton {
+        @include respond-to(mobile) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: auto;
+            display: block;
+        }
+
+        display: none;
+    }
+
+    &.profile {
+        flex-direction: column;
+        gap: 31px;
+    
+        .avatarContainer {
+            width: 116px;
+            height: 116px;
+        }
+    
+        .content {
+            gap: 7px;
+            align-items: center;
+                
+            .name {
+                font: var(--font-big-600-24);
+            }
+   
+            .editButton {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+    
+                .title {
+                    color: var(--grey-850);
+                    font: var(--font-small-400-tight);
+                }
+    
+                .icon {
+                    width: 16px;
+                    height: 16px;
+                    color: var(--grey-850);
+                }
+            }
+        }
+
+        .goToProfileButton {
+            display: none;
+        }
+    }
+}

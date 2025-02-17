@@ -1,0 +1,20 @@
+interface IArrowToRightProps {
+    className?: string;
+}
+
+export const ArrowToRight = ({ className }: IArrowToRightProps) => (
+    <svg
+        className={className}
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M13.334 9.33301L20.0007 15.9997L13.334 22.6663"
+            stroke="#171A19"
+            strokeWidth="2"
+            strokeLinecap="square"
+        />
+    </svg>
+);

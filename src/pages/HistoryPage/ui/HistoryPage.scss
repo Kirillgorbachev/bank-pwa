@@ -1,0 +1,24 @@
+.history-container {
+  @include respond-to(mobile) {
+    width: 100%;
+    margin-bottom: 75px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 520px;
+  margin-top: 28px;
+
+  .history-title {
+    @include respond-to(mobile) {
+      display: none;
+    }
+  }
+
+  .history-transactions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

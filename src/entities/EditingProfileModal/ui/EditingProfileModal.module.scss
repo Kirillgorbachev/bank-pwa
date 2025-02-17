@@ -1,0 +1,10 @@
+.editingProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include respond-to(mobile) {
+        gap: 16px;
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,12 @@
+.add-button {
+  width: 24px;
+  height: 24px;
+  padding: 1px;
+  border-radius: 50%;
+  background-color: var(--yellow-1);
+  transition: background-color 0.3s, transform 0.2s;
+
+  &:active{
+    transform: scale(1.1)
+  }
+}

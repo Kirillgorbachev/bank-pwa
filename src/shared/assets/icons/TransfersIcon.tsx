@@ -1,0 +1,9 @@
+export const TransfersIcon = (): JSX.Element => (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" fill="#EE4266" fillOpacity="0.1" />
+        <path d="M12 15V11H32V25H28" stroke="#EE4266" strokeWidth="2" />
+        <rect x="8" y="15" width="20" height="14" stroke="#EE4266" strokeWidth="2" />
+        <line x1="11" y1="21" x2="22" y2="21" stroke="#EE4266" strokeWidth="2" />
+        <line x1="19" y1="25" x2="25" y2="25" stroke="#EE4266" strokeWidth="2" />
+    </svg>
+);

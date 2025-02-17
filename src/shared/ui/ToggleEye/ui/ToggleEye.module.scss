@@ -1,0 +1,14 @@
+.iconButton {
+  position: absolute;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}

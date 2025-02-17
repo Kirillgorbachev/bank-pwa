@@ -1,0 +1,52 @@
+.recipientContainer {
+  @include respond-to(mobile) {
+    height: 261px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  height: 240px;
+  margin-bottom: 16px;
+  padding: 16px 24px 16px 0;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 24px;
+  color:var(--black-font);
+  font: var(--font-base-600);
+}
+
+.inputContainer {
+  @include respond-to(mobile) {
+    left: 16px;
+    width: 100%;
+  }
+
+  position: relative;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  width: 472px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--bg-middle-gray);
+}
+
+.input {
+  width: 100%;
+  margin-left: 5px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font: var(--font-small-400);
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}

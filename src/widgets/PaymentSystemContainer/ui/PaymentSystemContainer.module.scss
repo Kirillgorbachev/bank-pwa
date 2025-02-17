@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  text-align: left;
+}
+
+.title {
+  margin-top: 4px;
+  color: var(--black-font);
+  font: var(--font-base-600);
+}
+
+.options {
+  @include respond-to(mobile) {
+    gap: 8px;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 16px;
+}

@@ -1,0 +1,41 @@
+.cardContainer {
+  @include respond-to(mobile) {
+    flex-wrap: nowrap;
+    overflow: auto hidden;
+    scrollbar-width: none;
+  }
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+  justify-content: flex-start;
+  margin-top: 16px;
+  line-height: 18px;
+}
+
+.cardContainer .cardComponent {
+  @include respond-to(mobile) {
+    min-width: 130px;
+    height: 120px;
+  }
+}
+
+.paymentTitle{
+  @include respond-to(mobile) {
+    font: var(--font-big-600-adaptiv);
+  }
+
+  margin-top: 32px;
+  font: var(--font-big-600-24);
+  letter-spacing: -0.02em;
+}
+
+.desktopOnly {
+  display: inline;
+}
+
+@include respond-to(mobile) {
+  .desktopOnly {
+    display: none;
+  }
+}

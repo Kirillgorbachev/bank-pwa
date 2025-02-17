@@ -1,0 +1,28 @@
+.cardList {
+    @include respond-to(mobile) {
+        gap: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .cardItem {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: calc(100% - 48px);
+            height: 1px;
+            background-color: var(--grey-450);
+        }
+
+        &:hover {
+            background: var(--grey-card-hover);
+            cursor: pointer;
+        }
+    }
+}

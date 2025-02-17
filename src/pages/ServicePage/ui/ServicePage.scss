@@ -1,0 +1,29 @@
+.service-container {
+  @include respond-to(mobile) {
+    width: 92vw;
+    height: 73vh;
+    margin-top: 12px;
+    padding: 0 28px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 520px;
+  height: 80vh;
+  max-height: 824px;
+  padding: 0 56px;
+  border-radius: 8px;
+  background-color: var(--white);
+
+}
+
+.container-button {
+  @include respond-to(mobile) {
+    margin-top: 24px;
+  }
+
+  width: 100%;
+  margin-top: 34px;
+}

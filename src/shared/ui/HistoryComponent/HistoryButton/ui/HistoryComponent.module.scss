@@ -1,0 +1,49 @@
+.cardContainer {
+  @include respond-to(mobile) {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  @include respond-to(mobile) {
+    scrollbar-width: none;
+  }
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+  justify-content: flex-start;
+  padding-top: 32px;
+  line-height: 18px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card-text{
+  width: 77px;
+}
+
+.card {
+  @include respond-to(mobile) {
+    scroll-snap-align: start;
+  }
+
+  position: relative;
+}
+
+.newIndicator {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 6px solid var(--bg-light-gray);
+  border-radius: 50%;
+  background-color: var(--yellow-1);
+  transform: translate(50%, -50%);
+}
+

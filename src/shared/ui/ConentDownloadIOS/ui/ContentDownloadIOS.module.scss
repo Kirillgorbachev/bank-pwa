@@ -1,0 +1,140 @@
+.contentDownloadSecond {
+  @include respond-to(mobile){
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding: 0 16px;
+    background: transparent;
+  }
+
+  position: relative;
+  width: 520px;
+  height: 493px;
+  margin-top: 57px;
+  padding-left: 24px;
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.contentDownloadSecondIOS {
+  .iosContainer {
+    @include respond-to(mobile){
+      margin: 0;
+    }
+
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+
+    .iosText {
+      margin: 0;
+      font: var(--font-button-xs-600);
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .storeContainer {
+    @include respond-to(mobile){
+      margin: 0;
+    }
+
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .stepContainer {
+    @include respond-to(mobile){
+      gap: 0;
+      margin: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .stepTwoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .stepText {
+    font: var(--font-s-400);
+  }
+
+  .icon {
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+
+  .link {
+    margin-left: 5px;
+    color: var(--black);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+
+  .manualPage {
+    @include respond-to(mobile){
+      width: 100%;
+      height: 100%;
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+
+    width: 288px;
+    height: 163px;
+  }
+
+  .manualTwoPage {
+    width: 288px;
+    height: 160px;
+    margin-bottom: 8px;
+  }
+}
+
+.downloadButton {
+  width: 100%;
+  height: 56px;
+  margin: 70px 0 27px;
+}
+
+@include respond-to(mobile){
+  .mobileHeaderBar {
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: var(--black-font-disabled);
+  }
+
+  .stepNumber {
+    margin-bottom: 4px;
+    font: var(--font-base-600);
+  }
+}
+
+@include respond-to(mobile) {
+  .contentDownloadSecondIOS .iosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+
+    .iosText {
+      margin: 52px auto 32px;
+      font: var(--font-big-600-24);
+      letter-spacing: -0.02em;
+      white-space: pre-line;
+    }
+  }
+}

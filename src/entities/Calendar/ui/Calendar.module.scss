@@ -1,0 +1,9 @@
+.calendar {
+    @include respond-to(mobile) {
+        gap: 48px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

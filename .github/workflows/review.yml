@@ -1,0 +1,46 @@
+name: Request review on PRs
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  reviewers:
+      name: Request reviews on opened PRs
+      runs-on: ubuntu-latest
+      if: github.base_ref != 'master' && github.base_ref != 'stable'
+  
+      steps:
+        - name: Set up Node.js
+          uses: actions/setup-node@v4
+          with:
+            node-version: '20'
+  
+        - name: Checkout code
+          uses: actions/checkout@v4
+  
+        - name: Create PR review request
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          run: |
+            pr_author="${{ github.event.pull_request.user.login }}"
+            echo "PR Author: $pr_author"
+            
+            reviewers=$(awk '{print $1}' .github/CODEOWNERS | grep -v "^$pr_author$")
+            echo "reviewers w/o pr_author: $reviewers"
+            
+            request_review() {
+              reviewer=$1
+              response=$(curl -s -o /dev/null -w "%{http_code}" \
+                -X POST \
+                -H "Authorization: Bearer $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github.v3+json" \
+                https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/requested_reviewers \
+                -d "{\"reviewers\": [\"$reviewer\"]}")
+            
+              echo "Response for $reviewer: $response"
+            }
+            
+            for reviewer in $reviewers; do
+              request_review "$reviewer"
+            done

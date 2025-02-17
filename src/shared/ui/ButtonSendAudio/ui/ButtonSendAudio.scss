@@ -1,0 +1,31 @@
+.button-send-audio-container {
+  @include respond-to(mobile) {
+    margin-left: 0;
+  }
+
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  margin-left: 10px;
+
+  .button-send-audio {
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 9px 10px;
+    border-radius: 50%;
+    background-color: var(--black);
+    transition: background-color 0.3s, transform 0.2s;
+
+    & > svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:active {
+      transform: scale(0.90);
+    }
+  }
+}
+

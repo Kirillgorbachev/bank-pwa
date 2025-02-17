@@ -1,0 +1,9 @@
+.debitCards {
+    @include respond-to(mobile) {
+        gap: 16px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}

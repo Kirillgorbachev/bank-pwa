@@ -1,0 +1,15 @@
+.login-container {
+  @include respond-to(mobile) {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: var(--white);
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-middle-gray);
+}

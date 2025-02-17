@@ -1,0 +1,34 @@
+.cardContainer {
+  @include respond-to(mobile) {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  @include respond-to(mobile) {
+    scrollbar-width: none;
+  }
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+  justify-content: flex-start;
+  margin-top: 24px;
+  line-height: 18px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.cardContainer .cardComponent {
+  @include respond-to(mobile) {
+    min-width: 168px;
+  }
+}

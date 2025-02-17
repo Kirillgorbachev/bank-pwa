@@ -1,0 +1,49 @@
+.cardIssue{
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 88px;
+}
+
+.cardItem	{
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 12px 0 16px;
+    border-radius: 8px;
+    background: var(--white);
+}
+
+.tooltip{
+    position: relative;
+    z-index: 0;
+    width: 20px;
+    height: 20px;
+    padding-top: 12px;
+    cursor: pointer;
+
+    // visibility: hidden;
+}
+
+.tooltiptext{
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: var(--grey-card-hover);
+    color: var(--black-font-disabled);
+    font: var(--font-xs-300);
+    opacity: 0;
+    visibility: hidden;
+    transition: opasity 0.3s;
+    
+}
+
+.tooltip:hover .tooltiptext{
+    right: 0%;
+    bottom: 55%;
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,23 @@
+.notificationButton {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    .notificationCount {
+        @include respond-to(mobile) {
+            border: 2px solid var(--bg-light-gray);
+        }
+
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 16px;
+        height: 16px;
+        border: 2px solid var(--white);
+        border-radius: 50%;
+        background-color: var(--yellow-1);
+        color: var(--black);
+        font: var(--font-notification-count);
+        text-align: center;
+    }
+}

@@ -1,0 +1,70 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# user
+.idea
+.idea_modules/
+.vscode
+.gitconfig
+.run
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.npm
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# other
+/protected/runtime/*
+!/protected/runtime/.htaccess
+tests/_output/*
+/protected/config/*local.php
+/www/content/*
+/www/protected/*
+/www/docs
+/www/runtime
+/db
+/prod_db
+node_modules
+/mongodb/*
+/redis/*
+.husky/
+
+storybook-static
+
+localhost.crt
+localhost.key
+server.js
+swagger.yml
+.fleet
+/machinet.conf
+
+Draft
+dist

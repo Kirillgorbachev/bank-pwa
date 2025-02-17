@@ -1,0 +1,10 @@
+.goals-container {
+  @include respond-to(mobile) {
+    width: 320px;
+  }
+
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 4px 6px;
+}

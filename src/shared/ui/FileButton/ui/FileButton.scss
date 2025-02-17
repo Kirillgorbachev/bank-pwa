@@ -1,0 +1,33 @@
+.file-icon-container {
+  position: relative;
+  right: -10px;
+  height: 37px;
+  margin-top: auto;
+  margin-bottom: 8px;
+  padding: 8px 4px 8px 16px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: var(--yellow-1);
+
+  .file-icon-block {
+    position: relative;
+    top: -1px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: var(--white);
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1)
+    }
+
+    &:active {
+      transform: scale(0.90)
+    }
+
+    .file-icon-message {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

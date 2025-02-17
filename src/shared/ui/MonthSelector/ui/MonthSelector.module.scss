@@ -1,0 +1,52 @@
+.monthSelectorConteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    overflow: hidden;
+
+    .disable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        border-radius: 8px;
+        color: var(--black-font-disabled);
+        font: var(--font-s-500);
+        cursor: pointer;
+        user-select: none;
+        transition: background 0.2s, color 0.2s;
+    }
+
+    .active,
+    .disable:hover {
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 8px;
+        background: var(--white);
+        color: var(--black-font);
+        font: var(--font-s-500);
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .backgroundActive {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 4px;
+        border-radius: 8px;
+        background: var(--yellow-1);
+        cursor: pointer;
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}

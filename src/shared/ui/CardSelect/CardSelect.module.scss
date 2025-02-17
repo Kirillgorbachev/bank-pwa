@@ -1,0 +1,53 @@
+@import "../../../app/styles/fonts";
+
+.cardSelect {
+  width: 100%;
+  height: 133px;
+  margin-bottom: 16px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 24px;
+  color:var(--black-font);
+  font: var(--font-base-600);
+
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  width: 287px;
+  height: 77px;
+  margin-left: 24px;
+  padding-bottom: 5px;
+}
+
+.cardIcon {
+  width: 24px;
+  height: 36px;
+}
+
+.cardDetails {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.cardBalance {
+  color: var(--black-font);
+  font: var(--font-base-500);
+}
+
+.cardLabel {
+  color: var(--black-font-disabled);
+  font: var(--font-small-400-tight);
+}

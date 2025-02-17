@@ -1,0 +1,398 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "accessToken": "mocked_token_123456",
+      "refreshToken": "mocket_refresh_token_123",
+      "name": "Юлия Никитина",
+      "password": "123456",
+      "webauthnId": "ª§\b:D¡ü\u00134%:{-Æk=QÉ",
+      "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAERDVIq0oIa2gFBmGmJYqf3uAl3yDgCZgd8ZgeG+WJh6sha4ExPAJnmj8dh976i4hl7iQlVgEVs+TVI3L17aUnQg=="
+    },
+    {
+      "id": "2",
+      "accessToken": "mocked_token_12121212",
+      "refreshToken": "mocket_refresh_token_133333",
+      "name": "Агафья Прокофьевна",
+      "password": "123123",
+      "webauthnId": "encoded_webauthn_id_2",
+      "publicKey": "encoded_public_key_2"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Себе",
+      "phoneNumber": "89008888888",
+      "avatar": "defaultAvatar"
+    },
+    {
+      "id": "2",
+      "name": "Мама",
+      "phoneNumber": "89765432105"
+    },
+    {
+      "id": "3",
+      "name": "Брат",
+      "phoneNumber": "89765555555"
+    },
+    {
+      "id": "3",
+      "name": "Брат",
+      "phoneNumber": "89765555555"
+    },
+    {
+      "id": "3",
+      "name": "Брат",
+      "phoneNumber": "89765555555"
+    }
+  ],
+  "debitCardsType": [
+    {
+      "id": "1",
+      "icon": "gold",
+      "name": "Золотая карта",
+      "description": "10% баллов с каждой покупки",
+      "maintenanceFee": 1200
+    },
+    {
+      "id": "2",
+      "icon": "silver",
+      "name": "Серебрянная карта",
+      "description": "5% баллов с каждой покупки",
+      "maintenanceFee": 800
+    },
+    {
+      "id": "3",
+      "icon": "black",
+      "name": "Стандартная",
+      "description": "1% баллов с каждой покупки",
+      "maintenanceFee": 246
+    }
+  ],
+  "cards": [
+    {
+      "id": "1",
+      "value": "Mastercard",
+      "label": "Mastercard •• 6009",
+      "balance": "13649",
+      "points": 255,
+      "icon": "MastercardLogo",
+      "phoneNumber": "89008888888",
+      "info": [
+        {
+          "id": 1,
+          "type": "Пополнение",
+          "amount": 1400,
+          "date": "2024-11-25",
+          "category": "Перевод с карты",
+          "superCategory": "Переводы",
+          "source": "Карта"
+        },
+        {
+          "id": 2,
+          "type": "Списание",
+          "amount": -3699,
+          "date": "2024-11-26",
+          "category": "Задолжность по кредиту",
+          "superCategory": "Кредиты и задолжности",
+          "source": "Карта"
+        },
+        {
+          "id": 3,
+          "type": "Списание",
+          "amount": -760,
+          "date": "2024-11-25",
+          "category": "Обслуживание банка",
+          "superCategory": "Обслуживание",
+          "source": "Карта"
+        },
+        {
+          "id": 4,
+          "type": "Списание",
+          "amount": -9073,
+          "date": "2024-11-25",
+          "category": "Супермаркет",
+          "superCategory": "Супермаркет",
+          "source": "Карта"
+        },
+        {
+          "id": 5,
+          "type": "Пополнение",
+          "amount": 5600,
+          "date": "2024-11-25",
+          "category": "Перевод между карт",
+          "superCategory": "Переводы",
+          "source": "Карта"
+        },
+        {
+          "id": 6,
+          "type": "Списание",
+          "amount": -821.5,
+          "date": "2024-11-25",
+          "category": "Супермаркет",
+          "superCategory": "Супермаркет",
+          "source": "Карта"
+        },
+        {
+          "id": 18,
+          "type": "Списание",
+          "amount": -3699,
+          "date": "2025-01-11",
+          "category": "Супермаркет",
+          "superCategory": "Супермаркет",
+          "source": "Карта"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "value": "Visa",
+      "label": "Visa Classic •• 3467",
+      "balance": "2324",
+      "points": 288,
+      "icon": "VisaLogo",
+      "phoneNumber": "89003333333",
+      "info": [
+        {
+          "id": 7,
+          "type": "Пополнение",
+          "amount": 1400,
+          "date": "2024-11-25",
+          "category": "Перевод с карты",
+          "superCategory": "Переводы",
+          "source": "Карта"
+        },
+        {
+          "id": 8,
+          "type": "Списание",
+          "amount": -3699,
+          "date": "2024-11-26",
+          "category": "Задолжность по кредиту",
+          "superCategory": "Кредиты и задолжности",
+          "source": "Карта"
+        },
+        {
+          "id": 9,
+          "type": "Списание",
+          "amount": -760,
+          "date": "2024-11-25",
+          "category": "Обслуживание банка",
+          "superCategory": "Обслуживание",
+          "source": "Карта"
+        },
+        {
+          "id": 10,
+          "type": "Списание",
+          "amount": -9073,
+          "date": "2024-11-25",
+          "category": "Супермаркет",
+          "superCategory": "Супермаркет",
+          "source": "Карта"
+        },
+        {
+          "id": 11,
+          "type": "Пополнение",
+          "amount": 5600,
+          "date": "2024-11-25",
+          "category": "Перевод между карт",
+          "superCategory": "Переводы",
+          "source": "Карта"
+        },
+        {
+          "id": 12,
+          "type": "Списание",
+          "amount": -821.5,
+          "date": "2024-11-25",
+          "category": "Супермаркет",
+          "superCategory": "Супермаркет",
+          "source": "Карта"
+        },
+        {
+          "id": 13,
+          "type": "Списание",
+          "amount": -5899,
+          "date": "2024-12-06",
+          "category": "Супермаркет",
+          "superCategory": "Супермаркет",
+          "source": "Карта"
+        },
+        {
+          "id": 14,
+          "type": "Списание",
+          "amount": -699,
+          "date": "2024-12-10",
+          "category": "Задолжность по кредиту",
+          "superCategory": "Кредиты и задолжности",
+          "source": "Карта"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "value": "Card",
+      "label": "Кредит •• 3253",
+      "balance": "-42094",
+      "icon": "card",
+      "info": [
+        {
+          "id": 15,
+          "type": "Пополнение",
+          "amount": 1400,
+          "date": "2024-11-25",
+          "category": "Перевод с карты",
+          "superCategory": "Переводы",
+          "source": "Карта"
+        },
+        {
+          "id": 16,
+          "type": "Списание",
+          "amount": -3699,
+          "date": "2024-11-26",
+          "category": "Задолжность по кредиту",
+          "superCategory": "Кредиты и задолжности",
+          "source": "Карта"
+        },
+        {
+          "id": 17,
+          "type": "Списание",
+          "amount": -3699,
+          "date": "2025-01-10",
+          "category": "Задолжность по кредиту",
+          "superCategory": "Кредиты и задолжности",
+          "source": "Карта"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "value": "Bank",
+      "label": "Копилка •• 8578",
+      "balance": "10000",
+      "icon": "bank"
+    }
+  ],
+  "paymentSystems": [
+    {
+      "id": "1",
+      "label": "MasterCard",
+      "logo": "MastercardLogo"
+    },
+    {
+      "id": "2",
+      "label": "Visa",
+      "logo": "VisaLogo"
+    },
+    {
+      "id": "3",
+      "label": "МИР",
+      "logo": "MirLogo"
+    }
+  ],
+  "goals": [
+    {
+      "id": "1",
+      "total": "300000",
+      "object": "Vacation",
+      "goalStatus": "82"
+    },
+    {
+      "id": "2",
+      "total": "50000",
+      "object": "Repair",
+      "goalStatus": "56"
+    },
+    {
+      "id": "3",
+      "total": "2000000",
+      "object": "Car",
+      "goalStatus": "5"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "content": "Добрый день!",
+      "sender": "Me",
+      "direction": "outgoing",
+      "timestamp": "14:37",
+      "date": "2024-11-27"
+    },
+    {
+      "id": "2",
+      "content": "Добрый день, чем могу помочь?",
+      "sender": "Банк",
+      "direction": "incoming",
+      "timestamp": "14:37",
+      "date": "2024-11-27"
+    },
+    {
+      "id": "3",
+      "content": "Меня интересуют услуги банка",
+      "sender": "Me",
+      "direction": "outgoing",
+      "timestamp": "14:37",
+      "date": "2024-11-27"
+    },
+    {
+      "id": "4",
+      "content": "Спасибо за обращение!",
+      "sender": "Банк",
+      "direction": "incoming",
+      "timestamp": "14:37",
+      "date": "2024-11-27"
+    },
+    {
+      "id": "5",
+      "content": "Задайте свой вопрос или выберите из списка:",
+      "sender": "Банк",
+      "direction": "incoming",
+      "timestamp": "14:37",
+      "date": "2024-11-27"
+    },
+    {
+      "id": "6",
+      "content": "Все виды услуг",
+      "sender": "Me",
+      "direction": "outgoing",
+      "timestamp": "14:37",
+      "date": "2024-11-27"
+    },
+    {
+      "id": "7",
+      "content": "По какой услуге хотите получить информацию?",
+      "sender": "Банк",
+      "direction": "incoming",
+      "timestamp": "14:37",
+      "date": "2024-11-27"
+    },
+    {
+      "id": "1735153350141",
+      "content": "Зарегистрировать ИП",
+      "sender": "Me",
+      "direction": "outgoing",
+      "timestamp": "11:02",
+      "date": "2024-12-25"
+    }
+  ],
+  "documents": [
+    {
+      "documentId": "passport",
+      "icon": "passport",
+      "title": "Паспорт РФ",
+      "id": "e04b"
+    },
+    {
+      "documentId": "medicalInsurance",
+      "icon": "medicalInsurance",
+      "title": "ОМС",
+      "id": "f070"
+    },
+    {
+      "documentId": "insuranceNumber",
+      "icon": "insuranceNumber",
+      "title": "Снилс",
+      "id": "97cd"
+    }
+  ]
+}

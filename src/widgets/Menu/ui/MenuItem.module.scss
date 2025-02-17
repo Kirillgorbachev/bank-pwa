@@ -1,0 +1,64 @@
+.menuItem {
+    padding: 4px 12px;
+    border-radius: 8px;
+
+  
+    .link {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        text-decoration: none;
+
+        .name {
+            color: var(--grey-850);
+            font: var(--font-small-400-tight);
+            text-align: left;
+        }
+    }
+  
+    &:has(.active) {
+        background-color: var(--yellow-3);
+
+        .icon {
+            * {
+                stroke: var(--black);
+            }
+
+            &[data-name="payments"] {
+                * {
+                    fill: var(--black);
+                }
+            }
+        }
+        
+        .name {
+            color: var(--black);
+            font-size: 16px;
+        }
+    }
+}
+
+@include respond-to(mobile) {
+    .menuItem {
+        padding: 0;
+        border-radius: 0;
+
+        .link {
+            flex-direction: column;
+            gap: 5.5px;
+
+            .name {
+                font: var(--font-small-400-tight-adaptive);
+            }
+        }
+      
+        &:has(.active) {
+            background-color: transparent;
+
+            .icon {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.button {
+    @include respond-to(mobile) {
+        top: 14px;
+        right: 16px;
+        left: auto;
+        z-index: 4;
+        width: auto;
+        height: auto;
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+        opacity: 1;
+    }
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: fit-content;
+    height: 40px;
+    padding: 8px;
+    border-radius: 0 8px 8px 0;
+    background-color: var(--grey-200);
+    outline: none;
+    opacity: 0.6;
+}
+
+
+@include respond-to(mobile) {
+    .button {
+        top: 14px;
+        right: 16px;
+        left: auto;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        background-color: transparent;
+        opacity: 1;
+    }
+}

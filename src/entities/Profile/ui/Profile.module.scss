@@ -1,0 +1,12 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--bg-light-gray);
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

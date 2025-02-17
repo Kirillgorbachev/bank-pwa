@@ -1,0 +1,15 @@
+
+.form {
+  align-items: center;
+  width: 100%;
+  height: 495px;
+}
+
+.button {
+  @include respond-to(mobile) {
+    position: absolute;
+    right: 16px;
+    bottom: 46px;
+    left: 16px;
+  }
+}

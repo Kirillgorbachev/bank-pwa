@@ -1,0 +1,14 @@
+.contactsList {
+  @include respond-to(mobile) {
+    padding-left: 16px;
+  }
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  overflow-x: auto;
+  margin-top: 5px;
+  padding-left: 24px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}

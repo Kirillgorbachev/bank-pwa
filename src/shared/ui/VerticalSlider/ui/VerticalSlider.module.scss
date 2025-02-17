@@ -1,0 +1,45 @@
+.verticalSlider {
+    @include respond-to(mobile) {
+        overflow-x: hidden;
+        width: calc(100vw - 32px); // 375 -> 343, 360 -> 328
+        height: auto;
+        padding-right: 0;
+    }
+
+    overflow-y: scroll;
+    width: 576px;
+    height: calc(100vh - 64px - 269px); // 64=32*2 (padding window) 269=padding modal+title+select period
+    max-height: 660px;
+    padding-right: 52px;
+
+    .shadow {
+        @include respond-to(mobile) {
+            height: 0;
+        }
+
+        position: sticky;
+        bottom: 0;
+        width: 520px;
+        height: 76px;
+        background: linear-gradient(transparent, var(--bg-light-gray) 55%);
+    }
+
+    &::-webkit-scrollbar {
+        @include respond-to(mobile) {
+            width: 0;
+            background-color: transparent;
+        }
+
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-button {
+        height: 58px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        height: 150px;
+        border-radius: 20px;
+        background: var(--bg-middle-gray);
+    }
+}

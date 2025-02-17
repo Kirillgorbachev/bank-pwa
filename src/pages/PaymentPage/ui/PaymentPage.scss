@@ -1,0 +1,16 @@
+.payment-container {
+  @include respond-to(mobile) {
+    margin-bottom: 80px;
+  }
+}
+
+.paymentPage {
+  @include respond-to(mobile) {
+    display: none;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 520px;
+}

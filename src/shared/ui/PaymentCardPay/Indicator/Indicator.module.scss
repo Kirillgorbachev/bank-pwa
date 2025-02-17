@@ -1,0 +1,25 @@
+.indicatorContainer {
+  @include respond-to(mobile) {
+    display: none;
+  }
+
+  display: flex;
+  justify-content: center;
+  max-width: 520px;
+  margin-top: 16px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+
+.activeIndicator {
+  background-color: var(--yellow-1);
+}
+
+.inactiveIndicator {
+  background-color: var(--bg-middle-gray);
+}

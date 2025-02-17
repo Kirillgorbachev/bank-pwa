@@ -1,0 +1,25 @@
+.chat-button-send-container {
+  @include respond-to(mobile) {
+    right: 0;
+    margin-right: 7px;
+  }
+
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+
+  .chat-button-enter {
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--black);
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:active {
+      transform: scale(0.90);
+    }
+  }
+}

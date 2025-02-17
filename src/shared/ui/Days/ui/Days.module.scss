@@ -1,0 +1,13 @@
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 19px;
+    padding: 8px 0;
+    background: var(--grey-450);
+
+    .cell {
+        color: var(--grey-850);
+        font: var(--font-tiny-400-tiny-line);
+        text-align: center;
+    }
+}

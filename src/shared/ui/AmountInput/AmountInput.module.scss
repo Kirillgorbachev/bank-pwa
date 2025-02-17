@@ -1,0 +1,36 @@
+@import "../../../app/styles/fonts";
+
+.inputContainer {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--bg-middle-gray);
+  color: var(--grey-850);
+  font: var(--font-small-400-small-line);
+}
+
+.error {
+  position: absolute;
+  left: 0;
+  margin-top: 65px;
+  color: var(--red);
+  font: var(--font-tiny-400-tiny-line);
+}
+
+
+.hint {
+  position: absolute;
+  left: 0;
+  margin-top: 65px;
+  color: var(--black-font-disabled);
+  font: var(--font-tiny-400-tiny-line);
+}

@@ -1,0 +1,89 @@
+.cardDesign{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardShow{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    align-self: center;
+    width: 271px;
+    height: 162px;
+    padding: 24px 16px;
+    border-radius: 12px;
+
+    &>p{
+        color: var(--white);
+        font: var(--font-xs-300);
+        text-transform: uppercase;
+    }
+}
+
+.colorOptionWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.colorOptionWrapper.selectedWrapper {
+    border: 0.9px solid black;
+}
+
+.colorLast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+    border: 1px dashed var( --black-font-disabled);
+    border-radius: 50%;
+    color:var( --black-font-disabled);
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+
+    &:hover {
+       // border-color: var(--grey-card-hover);
+        transform: scale(1.1);
+    }
+}
+
+.colorOption {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+
+    &:hover {
+        border-color: var(--grey-card-hover);
+    }
+}
+
+.colorPicker {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.logoCardDesign{
+    align-self: flex-end;
+    width: 68px; 
+    height: 44px;
+    padding-top: 20px;
+
+}
+
+
+.title {
+    margin-right: auto;
+    font: var(--font-base-600);
+}

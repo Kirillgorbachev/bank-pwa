@@ -1,0 +1,23 @@
+.button_main {
+  width: 100%;
+  padding: 18px 15px;
+  border-radius: 8px;
+  background-image: linear-gradient(var(--grey-disable-1), var(--grey-disable-2));
+  color: var(--black-font-disabled);
+  font: var(--font-medium-500);
+  transition: background-color 0.3s, transform 0.2s;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:active{
+    transform: scale(0.98)
+  }
+}
+
+.active {
+  background-image: linear-gradient(var(--yellow-1), var(--yellow-2));
+  color: var(--black-font);
+}

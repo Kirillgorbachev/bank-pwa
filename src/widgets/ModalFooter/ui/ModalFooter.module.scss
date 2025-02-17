@@ -1,0 +1,26 @@
+.container {
+  @include respond-to(mobile) {
+    border-radius: 0;
+  }
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 88px;
+  margin: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: var(--white);
+}
+
+.buttonContainer {
+  @include respond-to(mobile) {
+    width: 158px;
+  }
+
+  width: 321px;
+}

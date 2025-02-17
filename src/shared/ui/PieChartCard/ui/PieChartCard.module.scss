@@ -1,0 +1,24 @@
+.PieChartCard {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 24px;
+    align-items: center;
+    height: 219px;
+    padding: 16px;
+    border-radius: 8px;
+    background: var(--white);
+}
+
+.PieChartContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font: var(--font-base-600);
+}
+
+.Pie{
+    width: 130px;
+    height: 130px;
+}
+
+

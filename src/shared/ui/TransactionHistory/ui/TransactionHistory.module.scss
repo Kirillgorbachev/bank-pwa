@@ -1,0 +1,90 @@
+.amount{
+    padding-left: 8px;
+    color: var(--black-font);
+    font: var(--font-s-500);
+
+    // margin-bottom: 4px;
+}
+
+.amountConteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.amountRefill::after {
+    content: "+";
+    display: flex;
+    align-items: center;
+    width:10px;
+    height:10px;
+    color:green;
+    font: var(--font-button-s-500);
+}
+
+.amountWriteOff::after{
+    content: "–";
+    display: flex;
+    align-items: center;
+    width:10px;
+    height:10px;
+    color:red;
+    font: var(--font-button-s-500);
+}
+
+.category{
+    flex: 1;
+    margin-bottom: 4px;
+    color: var(--black-font);
+    font: var(--font-s-400);
+}
+
+.categoryConteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date{
+    margin-bottom: 10px;
+    color:var(--black-font-disabled) ;
+    font: var(--font-small-400-tight);
+}
+
+.dateGroup {
+    margin-bottom: 20px;
+}
+
+.historyContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    padding-right: 16px;
+}
+
+.source{
+    flex: 1;
+    color: var( --grey-850);
+    font: var(--font-s-400);
+    text-align: right;
+}
+
+.transaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    margin-bottom: 8px;
+    padding: 16px;
+    background-color: var(--white);
+}
+
+.type{
+    flex: 1;
+    color: var( --grey-850);
+    font: var(--font-s-400);
+}

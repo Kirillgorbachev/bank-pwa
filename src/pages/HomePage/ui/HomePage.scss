@@ -1,0 +1,20 @@
+.main-container {
+  @include respond-to(mobile) {
+    margin-bottom: 100px;
+  }
+
+  .main-title {
+    @include respond-to(mobile) {
+      display: none;
+    }
+  }
+
+  .user {
+    @include respond-to(mobile) {
+      display: flex;
+      margin-top: 32px;
+    }
+
+    display: none;
+  }
+}

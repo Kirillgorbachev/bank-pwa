@@ -1,0 +1,36 @@
+.card {
+    @include respond-to(mobile) {
+        padding: 20px 16px 20px 0;
+    }
+
+    display: flex;
+    gap: 16px;
+    padding: 16px 16px 16px 0;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .title {
+            @include respond-to(mobile) {
+                font: var(--font-big-600-adaptiv);
+            }
+
+            color: var(--black);
+            font: var(--font-base-500);
+            letter-spacing: -0.02em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        .description {
+            color: var(--grey-950);
+            font: var(--font-small-400-tight);
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+    }
+}

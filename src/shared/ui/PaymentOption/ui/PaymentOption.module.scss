@@ -1,0 +1,36 @@
+.option {
+  @include respond-to(mobile) {
+    min-width: 116px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 168px;
+  height: 80px;
+  border-radius: 7px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: var(--grey-card-hover);
+}
+
+.option.selected {
+  border: 1px solid var(--black-font);
+}
+
+.logo {
+  width: 34px;
+  height: 24px;
+  margin-left: 12px;
+}
+
+.label {
+  margin-left: 16px;
+  color: var(--black-font);
+  font: var(--font-small-400-medium-line);
+}

@@ -1,0 +1,9 @@
+.title {
+  @include respond-to(mobile) {
+    font: var(--font-big-600-adaptiv);
+  }
+
+  color: var(--black);
+  font: var(--font-big-600);
+  letter-spacing: -0.02em;
+}

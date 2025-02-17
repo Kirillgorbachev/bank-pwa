@@ -1,0 +1,17 @@
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 133px;
+  height: 46px;
+}
+
+.label {
+  color: var(--price-text);
+  font: var(--font-small-400-medium-line);
+}
+
+.price {
+  color: var(--black-font);
+  font: var(--font-base-600);
+}

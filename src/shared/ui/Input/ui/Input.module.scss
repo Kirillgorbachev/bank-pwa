@@ -1,0 +1,29 @@
+@import "../../../../app/styles/fonts";
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 343px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--bg-middle-gray);
+}
+
+.input {
+  width: 100%;
+  padding-left: 30px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font: var(--font-small-400);
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.input.error {
+  color: var(--red);
+}
+

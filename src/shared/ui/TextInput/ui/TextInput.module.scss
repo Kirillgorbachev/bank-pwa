@@ -1,0 +1,21 @@
+.textInput {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    .label {
+        margin-left: 14px;
+        font: var(--font-small-400);
+        color: var(--grey-850);    
+    }
+
+    .input {
+        padding: 14px;
+        font: var(--font-small-400);
+        color: var(--black);
+        background: var(--grey-450);
+        border: none;
+        outline: none;
+        border-radius: 8px;
+    }
+}

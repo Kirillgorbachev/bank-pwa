@@ -1,0 +1,27 @@
+.contentDownloadFirst, .contentDownloadSecond {
+  display: flex;
+  flex-direction: column;
+}
+
+.manualContent {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.manualContent::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  display: block;
+}
+
+@include respond-to(mobile) {
+  .title {
+    display: none;
+  }
+}
+

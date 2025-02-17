@@ -1,0 +1,43 @@
+.themeSwitch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        color: var(--black-font);
+        font: var(--font-base-500);
+        letter-spacing: -0.02em;
+    }
+
+    .toggle {
+        position: relative;
+        display: flex;
+        width: 56px;
+        height: 32px;
+        border-radius: 30px;
+        background-color: var(--grey-450);
+
+        .label {
+            width: 50%;
+        }
+
+        .ellipse {
+            position: absolute;
+            top: 4px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: var(--white);
+
+            &.light {
+                right: auto;
+                left: 4px;
+            }
+
+            &.dark {
+                right: 4px;
+                left: auto;
+            }
+        }
+    }
+}

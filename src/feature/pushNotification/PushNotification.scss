@@ -1,0 +1,30 @@
+.container{
+  @include respond-to(mobile) {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 520px;
+  height: 46px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  background: linear-gradient(95.24deg, var(--yellow-1) 46.52%, var(--yellow-2) 103.48%);
+  color: var(--black-font);
+  font: var(--font-small-400-18);
+  letter-spacing: -0.02em;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container > button {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

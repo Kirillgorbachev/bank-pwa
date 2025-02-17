@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.icon {
+  @include respond-to(mobile) {
+    transform: scale(0.8);
+  }
+
+  width: 124px;
+  height: 124px;
+  transition: transform 0.3s ease;
+}
+
+.title {
+  @include respond-to(mobile) {
+    font: var(--font-big-600-adaptiv);
+  }
+
+  margin-top: 24px;
+  color: var(--black);
+  font: var(--font-big-600);
+  letter-spacing: -0.02em;
+}
+
+.description {
+  @include respond-to(mobile) {
+    margin-top: 8px;
+    font: var( --font-medium-500-medium-line);
+  }
+
+  margin-top: 16px;
+  color: var(--black-font-disabled);
+  font: var(--font-base-600);
+  letter-spacing: -0.02em;
+}

@@ -1,0 +1,39 @@
+.borderSelection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 56px;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .text {
+                font: var(--font-small-400-tight);
+                text-align: left;
+
+                &:nth-child(1) {
+                    color: var(--grey-850);
+                }
+
+                &:nth-child(2) {
+                    color: var(--black);
+                }
+            }
+        }
+
+        &:has(.input:checked)::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--yellow-1);
+        }
+    }
+}

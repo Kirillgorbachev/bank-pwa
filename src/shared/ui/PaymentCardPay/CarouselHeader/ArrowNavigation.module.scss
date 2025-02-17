@@ -1,0 +1,48 @@
+.paymentPage {
+  &_arrows {
+    display: flex;
+    gap: 8px;
+
+    .paymentPage_circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--white);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      .paymentPage_arrow {
+        width: 24px;
+        height: 24px;
+      }
+
+      &Left {
+        .paymentPage_arrowLeft {
+          transform: rotate(180deg);
+        }
+      }
+
+      &Right {
+        .paymentPage_arrowRight {
+          color: var(--black);
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 6px 12px rgb(0 0 0 / 2%);
+        transform: scale(0.99);
+      }
+
+      &.disabledArrow {
+        pointer-events: none;
+
+        .paymentPage_arrow {
+          opacity: 0.45;
+        }
+      }
+    }
+  }
+}

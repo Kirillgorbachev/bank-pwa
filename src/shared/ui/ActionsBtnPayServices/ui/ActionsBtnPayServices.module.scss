@@ -1,0 +1,30 @@
+.mobileOnly {
+  @include respond-to(mobile, min) {
+    display: none;
+  }
+}
+
+.actionTitle{
+  @include respond-to(mobile) {
+    margin-top: 34px;
+    font: var(--font-big-600-adaptiv);
+  }
+}
+
+.actionContainer{
+  @include respond-to(mobile) {
+    padding-bottom: 24px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+  padding-bottom: 33px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
